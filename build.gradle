@@ -8,22 +8,31 @@ apply plugin: 'java'
 apply plugin: 'idea'
 
 version = '0.0.1-SNAPSHOT'
-
-java {
-    toolchain {
-        languageVersion = JavaLanguageVersion.of(21)
-    }
-}
-
 compileJava {
     options.encoding = "UTF-8"
 }
 
-compileTestJava {
-    options.encoding = "UTF-8"
+repositories {
+    mavenCentral()
+}
+
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(21))
+    }
+}
+
+//compileTestJava {
+//    options.encoding = "UTF-8"
+//}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.12.2'
 }
 
 test {
     useJUnitPlatform()
 }
+
+
 
