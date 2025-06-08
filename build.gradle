@@ -26,6 +26,7 @@ compileTestJava {
     options.encoding = "UTF-8"
 }
 
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.12.2'
 }
