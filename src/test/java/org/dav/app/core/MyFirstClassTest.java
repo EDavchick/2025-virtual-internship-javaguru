@@ -1,11 +1,14 @@
-package org.dav.app;
+package org.dav.app.core;
 
 import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-class MyFirstClassTest {
+public class MyFirstClassTest {
+
     @Test
-    public void test(){
+    public void test() {
         assertTrue(true);
     }
+
 }
